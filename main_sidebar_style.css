@@ -1,0 +1,271 @@
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Styles for the body, navigation, and sidebar */
+        body {
+            background-color: rgb(255, 248, 248);
+            font-family: Lato, sans-serif;
+            transition: background-color.3s;
+        }
+
+        #imglogo {
+            width: 110px;
+            height: 48.75px;
+        }
+
+        .navc {
+            background-color: white;
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 55;
+            top: 0;
+            left: 0;
+            overflow-x: hidden;
+            transition: 0.5s;
+            overflow-y: auto;
+        }
+
+        .navc a {
+            padding: 2px 0;
+            text-decoration: none;
+            font-size: 17px;
+            color: black;
+            display: flex;
+            align-items: center;
+            transition: 0.2s;
+        }
+
+        .navc a i {
+            margin-right: 10px;
+            /* Space between icon and text */
+        }
+
+        .navc a:hover {
+            color: rgb(255, 208, 0);
+        }
+
+
+        .navc .closebtn {
+            font-size: 35px;
+            margin: 20px 30px 40px 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: sticky;
+            top: 0;
+            background-color: rgba(255, 255, 255, 0.3);
+            z-index: 100;
+        }
+
+        @media screen and (max-height: 450px) {
+            .navc {
+                padding-top: 15px;
+            }
+
+            .navc a {
+                font-size: 15px;
+            }
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 60px;
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            background-color: white;
+            overflow-x: hidden;
+            padding: 13px;
+            border-right: 1px solid rgb(226, 220, 220);
+            font-size: 20px;
+            color: black;
+
+
+        }
+
+        #navlink {
+            cursor: pointer;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+            padding: 11px;
+            border-radius: 50%;
+        }
+
+        .sidebar a {
+            margin: auto;
+            text-decoration: none;
+            font-size: 15px;
+            display: block;
+            padding: 39px 8px 6px 0px;
+        }
+
+        .sidebar i {
+            margin: auto;
+            text-decoration: none;
+            position: sticky;
+        }
+
+        #mainbody {
+            margin-left: 65px;
+            display: flex;
+        }
+
+        header {
+            position: relative;
+            width: 100%;
+
+            /* background-color:rgb(255, 248, 248,0.8) ; */
+        }
+
+        #delivery {
+            background-color: #ffc714;
+            border: none;
+            border-radius: 5px;
+            color: black;
+            padding: 3px 8px;
+            font-family: "Open Sans", sans-serif;
+            cursor: pointer;
+            margin: 0px 0px 0px 5px;
+            font-weight: 550;
+            font-size: 15px;
+            user-select: none;
+            display: inline-block;
+        }
+
+        header a {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            text-decoration: none;
+            margin-top: 7px;
+        }
+
+        #firstlinklist li {
+            list-style-type: none;
+            margin: 0px 16px;
+        }
+
+        #firstlinklist ul {
+            padding: 2px 0px;
+
+        }
+
+        hr {
+            opacity: 0.4;
+
+        }
+
+        #firstlinklist ul #txtshadow {
+            height: 60px;
+            color: rgb(128, 128, 128);
+            background-color: #e6e6e6;
+            margin: auto;
+            padding: 5px;
+        }
+
+        /* for only toogle button */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 47px;
+            height: 23px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #ffc714;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #ffc714;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+        .sidebar a {
+            color: grey;
+            align-items: center;
+            display: flex;
+            /* Use flexbox */
+            flex-direction: column;
+            /* Align items vertically */
+            justify-content: center;
+            /* Center items */
+            padding: 20px 0;
+            /* Adjust padding for spacing */
+            text-decoration: none;
+
+        }
+
+        .sidebar a:hover {
+            color: black;
+        }
+
+        
+
+        .sidebar a i {
+            background-color: white;
+            width: 41px;
+            height: 39px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .activelink {
+            width: 40px;
+            background-color: white;
+        }
+
+        .sidebar a.active i {
+            background-color: #ffc714;
+           
+            
+        }
+    

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broadway Pizza</title>
+    <link rel="icon" href="broadwayPizzaLogo.png" type="image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main_sidebar_style.css">
+    <script src="broadway.js"></script>
+    <link rel="stylesheet" href="broadway-body.css">
+    <style>
+      
+        input[type=text],
+        [type=tel],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 75%;
+            background-color: #FFC714;
+            color: rgb(0, 0, 0);
+            padding: 14px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=reset] {
+            width: 23%;
+            background-color: rgb(226, 44, 44);
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #e0b831e3;
+        }
+
+        input[type=reset]:hover {
+            background-color: #df4a4a;
+        }
+
+        #form-div {
+            border-radius: 15px;
+            background-color: #d1ecf7;
+            margin: auto;
+            width: 30%;
+        }
+
+        div form {
+            padding: 9px;
+            margin-top: 0px;
+        }
+
+        body {
+            background-color: rgb(255, 248, 248, 1);
+        }
+
+        sup {
+            color: red;
+        }
+
+        #star_red {
+            color: red;
+
+        }
+
+        #imglogo {
+            width: 120px;
+            height: 57px;
+            margin-left: 10px;
+        }
+
+        h1 {
+            margin: 9px 3px;
+        }
+
+        .header-stick {
+            position: sticky;
+            top: 0;
+            z-index: 54;
+            background-color: rgb(255, 248, 248, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main body content -->
+    <div id="mainbody">
+        <header style="display: block;">
+            <img src="broadwayPizzaLogo.png" alt="broadwayPizzaLogo" id="imglogo">
+        </header>
+    </div>
+
+    <br>
+    <!-- Navigation menu -->
+    <div id="navi" class="navc">
+
+        <head>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">CloseMenu</a>
+        </head>
+
+        <div id="firstlinklist">
+            <ul>
+                <hr>
+                <div style="position: relative;">
+                    <li><a href="#"><i class="fa fa-wechat" style="font-size:28px;color: #ffc714;"></i>About<i
+                                class="material-icons" style="position: absolute; right: 2px;">&#xe315;</i></a></li>
+                </div>
+                <hr>
+                <div style="position: relative;">
+                    <li><a href="#"><i class="material-icons" style="font-size:28px;color: #ffc714;">&#xe873;</i>Blog<i
+                                class="material-icons" style="position: absolute; right: 2px;">&#xe315;</i></a></li>
+                </div>
+
+                <hr>
+                <div style="position: relative;">
+                    <li><a href="#"><i class="material-icons"
+                                style="font-size:28px;color: #ffc714;">&#xe87f;</i>Feedback<i class="material-icons"
+                                style="position: absolute; right: 2px;">&#xe315;</i></a></li>
+                </div>
+
+                <hr>
+                <div style="position: relative;">
+                    <li><a href="#"><i class="material-icons"
+                                style="font-size:28px;color: #ffc714;">&#xe7e9;</i>Catering<i class="material-icons"
+                                style="position: absolute; right: 2px;">&#xe315;</i></a></li>
+                </div>
+
+                <hr>
+                <div style="position: relative;">
+                    <li><a href="#"><i class="material-icons"
+                                style="font-size:28px;color: #ffc714;">&#xeb3f;</i>Corporate<i class="material-icons"
+                                style="position: absolute; right: 2px;">&#xe315;</i></a></li>
+                </div>
+
+                <hr>
+                <div style="position: relative;">
+                    <li><a href="#"><i class="material-icons"
+                                style="font-size:28px;color: #ffc714;">&#xe8d1;</i>Franchise<i class="material-icons"
+                                style="position: absolute; right: 2px;">&#xe315;</i></a></li>
+                </div>
+
+                <hr>
+                <div style="position: relative;">
+                    <li><a href="#"><i class="material-icons"
+                                style="font-size:28px;color: #ffc714;">&#xe0c9;</i>Contact<i class="material-icons"
+                                style="position: absolute; right: 2px;">&#xe315;</i></a></li>
+                </div>
+                <hr>
+                <br>
+
+                <div id="txtshadow">
+                    <p>Connect with us</p>
+                </div>
+                <br>
+                <hr>
+                <div style="position: relative;">
+                    <li><a href="https://www.facebook.com/Broadwaypizzaa/" target="_blank"><i
+                                style="font-size:28px;color: #ffc714; border: 0.5px solid black; border-radius: 7px;"
+                                class="fa">&#xf082;</i>Facebook<i class="material-icons"
+                                style="position: absolute; right: 2px;">&#xe315;</i></a></li>
+                </div>
+                <hr>
+                <div style="position: relative;">
+                    <li><a href="https://www.instagram.com/broadwaypizzaa/?hl=en" target="_blank"><i
+                                style="font-size:28px;color: #ffc714; border: 0.5px solid black; border-radius: 8px;"
+                                class="fa">&#xf16d;</i>Instagram<i class="material-icons"
+                                style="position: absolute; right: 2px;">&#xe315;</i></a></li>
+                </div>
+
+                <hr>
+
+                <div style="position: relative;">
+                    <li><a href="#"><i style="font-size:28px;color: #ffc714;" class="fa">&#xf232;</i>WhatsApp<i
+                                class="material-icons" style="position: absolute; right: 2px;">&#xe315;</i></a></li>
+                </div>
+
+                <hr>
+
+                <div style="position: relative;">
+                    <li><a href="#"><i
+                                style="font-size:28px;color: #ffc714; border: 0.5px solid black;border-radius: 50%;"
+                                class="material-icons">&#xe61d;</i>Call
+                            Us<i class="material-icons" style="position: absolute; right: 2px;">&#xe315;</i></a></li>
+                </div>
+
+                <hr>
+                <br>
+                <hr>
+                <div style="position: relative;">
+                    <li><span> Dark Mode</span>
+                        <label style="position: absolute; right: 2px;" class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+                </div>
+                <hr>
+
+            </ul>
+
+        </div>
+
+    </div>
+    <!-- Sidebar with navigation link -->
+    <div class="header-stick">
+        <div class="sidebar">
+            <span id="navlink" onclick="openNav()">&#9776;</span>
+            <div class="activelink">
+                <a href="broadway.html" class="activehome" onclick="setActiveSidebar(this)"><i class="fa fa-fw fa-home"
+                        style="font-size: 28px;"></i>Order</a>
+                <a href="#" class="activehome" onclick="setActiveSidebar(this)"><i class="fa fa-list-alt"
+                        style="font-size: 28px;"></i>Menu</a>
+                <a href="cart.html" class="activehome" onclick="setActiveSidebar(this)"><i class="fa fa-shopping-cart"
+                        style="font-size: 28px;"></i></i>Cart</a>
+                <a href="#" class="activehome" onclick="setActiveSidebar(this)"><i class="material-icons"
+                        style="font-size: 28px;">location_on</i></i>Loca..</a>
+                <a href="pizzalogin.html" class="activehome active" onclick="setActiveSidebar(this)"><i
+                        class="material-icons" style="font-size: 28px;">person</i>Profile</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- the form elements -->
+    <div id="form-hide">
+        <form action="/action_page.php" id="form-div">
+            <div>
+                <h1>Your Account</h1>
+
+
+                <p style="font-family: Arial, Helvetica, sans-serif;">Please provide us with tour contact details for
+                    updates, exclusive offers, and an easy ordering
+                    experience
+                    right at your fingertips.
+                </p>
+                <p id=star_red>"*" means mandatory</p>
+                <label for="name">First Name<sup>*</sup></label>
+                <input type="text" id="name" placeholder="Your Name...">
+                <label for="phone">Your Phone<sup>*</sup></label>
+                <input type="tel" id="mnumber" name="mnumber" placeholder="Your Mobile Number...">
+                <label for="email">Your Email<sup>*</sup></label>
+                <input type="text" id="email" name="email" placeholder="Your email...">
+                <input type="submit" value="Continue">
+                <input type="reset" value="Reset">
+            </div>
+
+        </form>
+    </div>
+   
+</body>
+
+</html>
